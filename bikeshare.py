@@ -25,6 +25,7 @@ def get_filters():
         	city = input("enter the name of the city")
         	city = city.lower()
     	# get user input for month (all, january, february, ... , june)
+	print("\nYou can select an individual month or can enter all to select all months\n")
 	month = input(" enter the name of the month among 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december' or 'all': ")
 	month = month.lower()
 	while month not in ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 					'december', 'all']:
