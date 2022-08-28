@@ -186,15 +186,17 @@ def main():
 	        raw_data =raw_data.lower()
 	        present_count = 0
 	        while (raw_data == 'yes'):
-	        	if (present_count + 5 >= df.shape[0]):
+	        	#print 20 rows of the dataset
+	        	if (present_count + 20 >= df.shape[0]):
 	        		print(df.iloc[list(range(present_count,df.shape[0]-1,1))])
 	        		print("\n End of file reached hence quitting!!!\n")
 	        		break
 	        	else:
-	        		print(df.iloc[list(range(present_count,present_count+5,1))])
-	        		present_count += 5
+	        		print(df.iloc[list(range(present_count,present_count+20,1))])
+	        		present_count += 20
 	        		raw_data = input("Do you want to see raw trip data? Enter <Yes> or <No>")
 	        		raw_data = raw_data.lower()
+
 
 	        
 	        restart = input('\nWould you like to restart? Enter yes or no.\n')
